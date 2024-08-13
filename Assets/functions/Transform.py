@@ -1,3 +1,5 @@
+import os
+
 magos = []
 cientificos = []
 otros = []
@@ -24,11 +26,35 @@ def hacer_grandiosos(magos):
 def imprimir_nombres(list):
     n = 0
     print("Listado de Nombres:")
+    print()
     for i in list:
         print(list[n])
         n = n + 1
     print()
+    print("#########################")
+    print()
     hacer_grandiosos(magos)
-    print("Los Magos son:", magos)
-    print("los cientificos son:", cientificos)
-    print("Los demas son:", otros)
+    print("Los Magos son:")
+    print()
+    for i in magos:
+        print(i)
+    print()
+    print("#########################")
+    print()
+    print("los cientificos son:")
+    print()
+    for i in cientificos:
+        print(i)
+    print()
+    print("#########################")
+    print()
+    print("Los demas son:")
+    print()
+    for i in otros:
+        print(i)
+
+def clear():
+    if os.name == "nt":
+        os.system("cls")
+    else:
+        os.system("clear")

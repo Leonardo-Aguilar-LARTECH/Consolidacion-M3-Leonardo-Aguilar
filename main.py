@@ -12,6 +12,6 @@ nombres_list = [
     "Juanes",
 ]
 
-
+tr.clear()
 tr.agrupar(nombres_list)
 tr.imprimir_nombres(nombres_list)
